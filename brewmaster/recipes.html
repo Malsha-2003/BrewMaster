@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Coffee Recipes</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">BrewMaster</a>
+</div>
+</nav>
+
+
+<div class="container mt-5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipes – BrewMaster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="brand-icon">☕</span> BrewMaster</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="submit.html">Submit</a></li>
+        <li class="nav-item"><a class="nav-link" href="submit.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container text-center">
+    <span class="section-tag">Browse &amp; Filter</span>
+    <h1>All Coffee <em>Recipes</em></h1>
+    <p>Find your perfect brew from our curated collection</p>
+  </div>
+</section>
+
+<!-- SEARCH + FILTER -->
+<section class="filter-section">
+  <div class="container">
+    <div class="search-bar-wrap mb-4">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Search recipes..."/>
+      <span class="search-icon">🔍</span>
+    </div>
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="hot">☕ Hot</button>
+      <button class="filter-btn" data-filter="cold">🧊 Cold</button>
+      <button class="filter-btn" data-filter="sweet">🍯 Sweet</button>
+      <button class="filter-btn" data-filter="strong">⚡ Strong</button>
+    </div>
+  </div>
+</section>
+
+<!-- RECIPE GRID -->
+<section class="recipes-grid-section">
+  <div class="container">
+    <div class="row g-4" id="recipesGrid"></div>
+    <div id="noResults" class="no-results" style="display:none;">
+      <p>☕ No recipes found. Try a different search or filter.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECIPE MODAL -->
+<div class="modal fade" id="recipeModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content brew-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Recipe</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="brew-footer">
+  <div class="container">
+    <div class="footer-brand">☕ BrewMaster</div>
+    <p class="footer-tagline">Every cup is a new adventure.</p>
+    <div class="footer-links">
+      <a href="index.html#about">About</a>
+      <a href="submit.html#contact">Privacy</a>
+      <a href="recipes.html">Recipes</a>
+    </div>
+    <p class="footer-copy">© 2024 BrewMaster · ASB/2023/144 · COM 2303</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/recipes.js"></script>
+</body>
+</html>
